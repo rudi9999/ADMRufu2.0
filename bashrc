@@ -1,6 +1,6 @@
 if [[ $(echo $PATH|grep "/usr/games") = "" ]]; then PATH=$PATH:/usr/games; fi
 
-[[ -e "/etc/reseller" ]] && msj="$(less /etc/reseller)"
+[[ -e "/etc/reseller" ]] && msj="$(cat /etc/reseller)"
 
 [[ -z "$msj" ]] && msj="@Rufu99"
 
