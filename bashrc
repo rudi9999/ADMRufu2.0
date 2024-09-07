@@ -15,3 +15,5 @@ echo -e "\n" \
 "   Para ver lista de comandos escriba:  ls-cmd \n\n"|lolcat
 
 [[ -e /usr/lib/update-notifier/update-motd-reboot-required ]] && /usr/lib/update-notifier/update-motd-reboot-required   #ADMRufu
+
+alias update-adm='git -C /etc/ADMRufu2.0 pull'
