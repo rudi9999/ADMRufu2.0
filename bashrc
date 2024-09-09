@@ -14,4 +14,4 @@ echo -e "\n" \
 
 [[ -e /usr/lib/update-notifier/update-motd-reboot-required ]] && /usr/lib/update-notifier/update-motd-reboot-required   #ADMRufu
 
-alias update-adm='git -C /etc/ADMRufu2.0 pull'
+alias uninstall-adm='/etc/ADMRufu2.0/install'
