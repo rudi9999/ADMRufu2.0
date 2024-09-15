@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ -f "$1.mo" ]]; then
+	rm $1.mo
+fi
+
+msgfmt -o $1.mo $1.po

@@ -1,0 +1,59 @@
+msgid "Fecha:"
+msgstr "Date: "
+
+msgid "Hora:"
+msgstr "Time:"
+
+msgid "Libre:"
+msgstr "Free: "
+
+msgid "Sistema"
+msgstr "System "
+
+msgid "Disc"
+msgstr "Disk"
+
+msgid "Dispo:"
+msgstr "Avail:"
+
+msgid "En Uso:"
+msgstr "In Use:"
+
+msgid "Cache:"
+msgstr "Cache:"
+
+msgid "Buffer:"
+msgstr "Buffer:"
+
+msgid "Total:"
+msgstr "Total:"
+
+msgid "Cores:"
+msgstr "Cores:"
+
+msgid "ACTIVA:"
+msgstr "ACTIVE:"
+
+msgid "EXPIRADA:"
+msgstr "EXPIRED: "
+
+msgid "BLOQUEADA:"
+msgstr "BLOCKED:  "
+
+msgid "TOTAL:"
+msgstr "TOTAL:"
+
+msgid "ADMINISTRAR CUENTAS"
+msgstr "MANAGE ACCOUNTS"
+
+msgid "CONFIGURACION DE PROTOCOLOS"
+msgstr "PROTOCOL CONFIGURATION"
+
+msgid "HERRAMIENTAS EXTRAS"
+msgstr "EXTRA TOOLS"
+
+msgid "DESINSTALAR PANEL"
+msgstr "UNINSTALL PANEL"
+
+msgid "CONFIGURACION DEL SCRIPT"
+msgstr "SCRIPT CONFIGURATION"
