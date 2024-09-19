@@ -1,0 +1,77 @@
+msgid "ADMINISTRADOR SSH"
+msgstr "SSH ADMINISTRATOR"
+
+msgid "VOLVER"
+msgstr "RETURN"
+
+msgid "MODIFICAR PUERTO SSH"
+msgstr "MODIFY SSH PORT"
+
+msgid "INICIAR/DETENER SERVIDOR SSH"
+msgstr "START/STOP SSH SERVER"
+
+msgid "REINICIAR SERVIDOR SSH"
+msgstr "RESTART SSH SERVER"
+
+msgid "DESINSTALAR OPENSSH-SERVER"
+msgstr "UNINSTALL OPENSSH-SERVER"
+
+msgid "INSTALAR OPENSSH-SERVER"
+msgstr "INSTALL OPENSSH-SERVER"
+
+msgid "Ingresa una Opcion"
+msgstr "Enter an Option"
+
+msgid "Ingresa tus puertos"
+msgstr "Enter your ports"
+
+msgid "Puedes ingresar multiples puertos a la vez"
+msgstr "You can enter multiple ports at once"
+
+msgid "ceparados por un espacio ej:"
+msgstr "separated by a space ex:"
+
+msgid "INVALIDO!"
+msgstr "INVALID!"
+
+msgid "EN USO!"
+msgstr "IN USE!"
+
+msgid "DISPONIBLE!"
+msgstr "AVAILABLE!"
+
+msgid "REINTENTAR"
+msgstr "RETRY"
+
+msgid "GUARDAR"
+msgstr "SAVE"
+
+msgid "falla al modificar puertos ssh"
+msgstr "Failed to modify ssh ports"
+
+msgid "PUERTOS:"
+msgstr "PORTS:"
+
+msgid "sin puerto activo"
+msgstr "no active port"
+
+msgid "PRECAUCION!"
+msgstr "CAUTION!"
+
+msgid "ANTES DE CONTINUAR, ASEGURARCE QUE!"
+msgstr "BEFORE CONTINUING, MAKE SURE!"
+
+msgid "SAVES LO QUE HACES!"
+msgstr "YOU SAVE WHAT YOU DO!"
+
+msgid "QUE ESTAS EN UN ENTORNO DE PRUEVA!"
+msgstr "YOU ARE IN A TEST ENVIRONMENT!"
+
+msgid "QUE TIENES UN METODO ALTERNO SSH!"
+msgstr "YOU HAVE AN ALTERNATE SSH METHOD!"
+
+msgid "QUE CON ESTO PUEDES PERDER EL ACCESO AL SERVIDOR VPS!"
+msgstr "WITH THIS YOU CAN LOSE ACCESS TO THE VPS SERVER!"
+
+msgid "Desea continuar? [S/N]"
+msgstr "Do you want to continue? [Y/N]"

@@ -1,3 +1,0 @@
-#!/bin/bash
-echo 'menu'
-ls /etc/ADMRufu/sbin|sed 's/ /\n/'
