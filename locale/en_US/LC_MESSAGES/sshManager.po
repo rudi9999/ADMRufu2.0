@@ -88,5 +88,17 @@ msgstr "This can make it difficult to modify"
 msgid "de puertos, el inicio y reinicio del servicio."
 msgstr "ports, start and restart the service."
 
+msgid "Para desactivar el socket systemd"
+msgstr "To disable systemd socket"
+
+msgid "requiere reiniciar el servidor vps!"
+msgstr "requires restarting the vps server!"
+
+msgid "Antes de continuar y por seguridad aplique un"
+msgstr "Before continuing and for security reasons, apply an"
+
+msgid "metodo alterno de coneccion a su servidor vps!"
+msgstr "alternate method of connection to your VPS server!"
+
 msgid "Desactivar el socket? [S/N]"
 msgstr "Disable socket? [Y/N]"
