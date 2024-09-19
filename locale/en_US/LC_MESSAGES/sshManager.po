@@ -75,3 +75,18 @@ msgstr "WITH THIS YOU CAN LOSE ACCESS TO THE VPS SERVER!"
 
 msgid "Desea continuar? [S/N]"
 msgstr "Do you want to continue? [Y/N]"
+
+msgid "El administrador ssh no esta preparado"
+msgstr "The ssh manager is not prepared"
+
+msgid "para el manejo a travez de socket de systemd."
+msgstr "for systemd socket handling."
+
+msgid "Esto puede dificultar la modificacion"
+msgstr "This can make it difficult to modify"
+
+msgid "de puertos, el inicio y reinicio del servicio."
+msgstr "ports, start and restart the service."
+
+msgid "Desactivar el socket? [S/N]"
+msgstr "Disable socket? [Y/N]"
