@@ -25,11 +25,14 @@ msgstr "Enter an Option"
 msgid "Ingresa tus puertos"
 msgstr "Enter your ports"
 
-msgid "Puedes ingresar multiples puertos a la vez"
-msgstr "You can enter multiple ports at once"
+msgid "INGRESA PUERTOS CONSECUTIVOS"
+msgstr "ENTER CONSECUTIVE PORTS"
 
-msgid "ceparados por un espacio ej:"
-msgstr "separated by a space ex:"
+msgid "SEPARADOR POR UN ESPACIO"
+msgstr "SEPARATOR FOR A SPACE"
+
+msgid "EJ:"
+msgstr "EX:"
 
 msgid "INVALIDO!"
 msgstr "INVALID!"
