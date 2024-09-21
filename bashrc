@@ -16,3 +16,4 @@ echo -e "\n" \
 
 alias remove-adm='/etc/ADMRufu2.0/install'
 alias menu='/etc/ADMRufu2.0/sbin/menu'
+alias dropBear='/etc/ADMRufu2.0/sbin/dropBear'
