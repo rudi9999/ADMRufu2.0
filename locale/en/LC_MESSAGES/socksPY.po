@@ -110,10 +110,10 @@ msgid "SOCKS PYTHON3 SIMPLE"
 msgstr "SIMPLE PYTHON3 SOCKS"
 
 msgid "SOCKS PYTHON2 DIRECTO"
-msgstr "SOCKS PYTHON2 DIRECT"
+msgstr "SOCKS  PYTHON2 DIRECT"
 
 msgid "SOCKS PYTHON3 DIRECTO"
-msgstr "SOCKS PYTHON3 DIRECT"
+msgstr "SOCKS  PYTHON3 DIRECT"
 
 msgid "Falla al crear directorio de trabajo socksPY"
 msgstr "Failed to create socksPY working directory"
