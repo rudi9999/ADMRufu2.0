@@ -4,6 +4,9 @@ msgstr "INSTALLING PYTHON MODULES"
 msgid "VOLVER"
 msgstr "RETURN"
 
+msgid "EN USO!"
+msgstr "IN USE!"
+
 msgid "INGRESA EL PUERTO"
 msgstr "ENTER THE PORT"
 
