@@ -1,6 +1,12 @@
 msgid "INSTALANDO MODULOS PYTHON"
 msgstr "INSTALLING PYTHON MODULES"
 
+msgid "VOLVER"
+msgstr "RETURN"
+
+msgid "INGRESA EL PUERTO"
+msgstr "ENTER THE PORT"
+
 msgid "Falla al crear directorio socksPY"
 msgstr "Failed to create socksPY directory"
 
