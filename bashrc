@@ -14,6 +14,12 @@ echo -e "\n" \
 
 [[ -e /usr/lib/update-notifier/update-motd-reboot-required ]] && /usr/lib/update-notifier/update-motd-reboot-required   #ADMRufu
 
+
+if [[ -f "/root/.acme.sh/acme.sh" ]]; then
+	export LE_WORKING_DIR="/root/.acme.sh"
+	alias acme.sh="/root/.acme.sh/acme.sh"
+fi
+
 alias remove-adm='/etc/ADMRufu2.0/install'
 alias menu='/etc/ADMRufu2.0/sbin/menu'
 alias dropBear='/etc/ADMRufu2.0/sbin/dropBear'
