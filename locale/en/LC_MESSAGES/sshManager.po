@@ -105,3 +105,6 @@ msgstr "alternate method of connection to your VPS server!"
 
 msgid "Desactivar el socket? [S/N]"
 msgstr "Disable socket? [Y/N]"
+
+msgid "CONFIGURAR BANNER SSH"
+msgstr "CONFIGURE SSH BANNER"
