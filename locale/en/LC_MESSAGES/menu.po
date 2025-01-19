@@ -75,3 +75,29 @@ msgstr "Enter an Option"
 
 msgid "falla al cerrar la secion!"
 msgstr "failed to log out!"
+
+msgid "INFORMACIOND DEL SISTEMA"
+msgstr "SYSTEM INFORMATION"
+
+msgid "CONTADOR DE CONECCIONES Y CUENTAS"
+msgstr "CONNECTION AND ACCOUNT COUNTER"
+
+msgid "Volver"
+msgstr "Back"
+
+msgid "Guardar"
+msgstr "Save"
+
+msgid "ACTIVA"
+msgstr "ACTIVE"
+
+msgid "EXPIRADA"
+msgstr "EXPIRED"
+
+msgid "BLOQUEADA"
+msgstr "BLOCKED"
+
+msgid "TOTAL"
+msgstr "TOTAL"
+
+
