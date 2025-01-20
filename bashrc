@@ -9,8 +9,7 @@ clear
 echo -e "\n" \
 "$(figlet -f big.flf "  ADMRufu2.0")\n" \
 "        RESELLER : $msj \n\n" \
-"   Para iniciar ADMRufu escriba:  menu \n" \
-"   Para ver lista de comandos escriba:  ls-cmd \n\n"|lolcat
+"   Para iniciar ADMRufu escriba:  menu \n\n"|lolcat
 
 [[ -e /etc/ADMRufu2.0/isRoot ]] && /etc/ADMRufu2.0/isRoot
 
@@ -24,5 +23,3 @@ fi
 
 alias remove-adm='/etc/ADMRufu2.0/install'
 alias menu='/etc/ADMRufu2.0/sbin/menu'
-alias dropBear='/etc/ADMRufu2.0/sbin/dropBear'
-alias socksPY='/etc/ADMRufu2.0/sbin/socksPY'
