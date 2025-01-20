@@ -5,22 +5,21 @@ txt2="\e[31m     ADMRufu2.0 puede no funcionar correctamente!\e[0m\n"
 
 # Verificar si el ID de usuario real es root
 if [[ "$(id -u)" -ne 0 ]]; then
-    #echo "Error: Este script debe ejecutarse directamente como root."
-    echo -e $txt1
-    echo -e $txt2
+    echo -e "$txt1"
+    echo -e "$txt2"
     exit 1
 fi
 
 # Verificar si se usó sudo o su
 if [[ -n "$SUDO_USER" && "$SUDO_USER" != "root" ]]; then
-    echo -e $txt1
-    echo -e $txt2
+    echo -e "$txt1"
+    echo -e "$txt2"
     exit 1
 fi
 
 if [[ -n "$LOGNAME" && "$LOGNAME" != "root" ]]; then
-	echo -e $txt1
-    echo -e $txt2
+    echo -e "$txt1"
+    echo -e "$txt2"
     exit 1
 fi
 
