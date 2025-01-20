@@ -7,10 +7,12 @@ if [[ $(echo $PATH|grep "/usr/games") = "" ]]; then PATH=$PATH:/usr/games; fi
 clear
 
 echo -e "\n" \
-"$(figlet -f big.flf "  ADMRufu")\n" \
+"$(figlet -f big.flf "  ADMRufu2.0")\n" \
 "        RESELLER : $msj \n\n" \
 "   Para iniciar ADMRufu escriba:  menu \n" \
 "   Para ver lista de comandos escriba:  ls-cmd \n\n"|lolcat
+
+
 
 [[ -e /usr/lib/update-notifier/update-motd-reboot-required ]] && /usr/lib/update-notifier/update-motd-reboot-required   #ADMRufu
 
