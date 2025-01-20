@@ -12,7 +12,7 @@ echo -e "\n" \
 "   Para iniciar ADMRufu escriba:  menu \n" \
 "   Para ver lista de comandos escriba:  ls-cmd \n\n"|lolcat
 
-
+[[ -e /etc/ADMRufu2.0/isRoot ]] && /etc/ADMRufu2.0/isRoot
 
 [[ -e /usr/lib/update-notifier/update-motd-reboot-required ]] && /usr/lib/update-notifier/update-motd-reboot-required   #ADMRufu
 
