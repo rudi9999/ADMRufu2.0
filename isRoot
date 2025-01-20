@@ -1,7 +1,7 @@
 #!/bin/bash
 
-txt1="\e[31m   Se requiere inicio directo como root\e[0m"
-txt2="\e[31m   ADMRufu2.0 puede no funcionar correctamente!\e[0m\n"
+txt1="\e[31m     Se requiere inicio directo como root\e[0m"
+txt2="\e[31m     ADMRufu2.0 puede no funcionar correctamente!\e[0m\n"
 
 # Verificar si el ID de usuario real es root
 if [[ "$(id -u)" -ne 0 ]]; then
