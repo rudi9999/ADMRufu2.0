@@ -7,9 +7,6 @@ msgstr "Time:"
 msgid "Libre:"
 msgstr "Free: "
 
-msgid "Sistema"
-msgstr "System "
-
 msgid "Disc"
 msgstr "Disk"
 
@@ -76,7 +73,7 @@ msgstr "Enter an Option"
 msgid "falla al cerrar la secion!"
 msgstr "failed to log out!"
 
-msgid "INFORMACIOND DEL SISTEMA"
+msgid "INFORMACION DEL SISTEMA"
 msgstr "SYSTEM INFORMATION"
 
 msgid "CONTADOR DE CONECCIONES Y CUENTAS"
@@ -100,4 +97,12 @@ msgstr "BLOCKED"
 msgid "TOTAL"
 msgstr "TOTAL"
 
+msgid "INFORMACION DE MEMORIA SWAP"
+msgstr "SWAP MEMORY INFORMATION"
+
+msgid "INFORMACION DE MEMORIA RAM"
+msgstr "RAM MEMORY INFORMATION"
+
+msgid "INFORMACION DE DISCO Y CPU"
+msgstr "DISK AND CPU INFORMATION"
 
