@@ -75,3 +75,46 @@ msgstr "UNINSTALL"
 
 msgid "INSTALAR UDP-HYSTERIA"
 msgstr "INSTALL UDP-HYSTERIA"
+
+msgid "MODIFICAR OBFS"
+msgstr "MODIFY OBFS"
+
+msgid "Ingresa Tu OBFS"
+msgstr "Enter Your OBFS"
+
+msgid "NUEVO OBFS"
+msgstr "NEW OBFS"
+
+msgid "Canselar"
+msgstr "Cancel"
+
+msgid "Reintentar"
+msgstr "Retry"
+
+msgid "Guardar"
+msgstr "Save"
+
+msgid "falla al leer config.json"
+msgstr "failed to read config.json"
+
+msgid "falla al cargar los datos json"
+msgstr "failed to load json data"
+
+msgid "falla al abrir config.json"
+msgstr "failed to open config.json"
+
+msgid "falla al abrir config.yaml"
+msgstr "failed to open config.yaml"
+
+msgid "falla al procesar el archivo config.yaml"
+msgstr "failed to process config.yaml file"
+
+
+
+
+
+
+
+
+
+
