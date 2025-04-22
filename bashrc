@@ -1,3 +1,14 @@
+if [[ $(dpkg -l lolcat|grep -w 'ii'|awk '{print $2}'|wc -l) -le 0 ]]; then
+	echo "[+] instalando lolcat ..."
+	apt install lolcat -y
+
+if
+
+if [[ $(dpkg -l figlet|grep -w 'ii'|awk '{print $2}'|wc -l) -le 0 ]]; then
+	echo "[+] instalando figlet ..."
+	apt install figlet -y
+if
+
 if [[ $(echo $PATH|grep "/usr/games") = "" ]]; then PATH=$PATH:/usr/games; fi
 
 [[ -e "/etc/reseller" ]] && msj="$(less /etc/reseller)"
