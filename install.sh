@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm $(pwd)/$0 &> /dev/null
+
 set -e  # Falla si algo falla
 
 echo "[+] Instalando dependencias si faltan..."
@@ -15,5 +17,9 @@ sudo apt-get update
 echo "[+] Instalando libstdc++6 actualizada..."
 sudo apt-get install -y libstdc++6
 
-echo "[✓] Verificación final:"
-strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX | sort | tail
+echo "[+] Descargando instalador..."
+
+rm -rf /root/install
+wget --no-cache -O /root/install "https://github.com/rudi9999/ADMRufu2.0/raw/refs/heads/main/install"
+chmod +x /root/install
+/root/install
