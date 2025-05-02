@@ -37,7 +37,7 @@ alias menu='/etc/ADMRufu2.0/sbin/menu'
 if [[ -f /root/ADMRufu/auto ]]; then
 	num=0
 	while [ ! -f /tmp/updateOK ]; do
-		++num
+		let ++num
 		sleep 1
 		if [[ num -ge 4 ]]; then
 			break
