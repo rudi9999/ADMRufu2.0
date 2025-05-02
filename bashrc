@@ -33,3 +33,19 @@ fi
 
 alias remove-adm='/etc/ADMRufu2.0/install'
 alias menu='/etc/ADMRufu2.0/sbin/menu'
+
+if [[ -f /root/ADMRufu/auto ]]; then
+	num=0
+	while [ ! -f /tmp/updateOK ]; do
+		++num
+		sleep 1
+		if [[ num -ge 4 ]]; then
+			break
+		fi
+	done
+
+	if [[ -f /tmp/updateOK ]]; then
+		rm -rf /tmp/updateOK
+		menu
+	fi
+fi
