@@ -39,7 +39,7 @@ if [[ -f /root/ADMRufu/auto ]]; then
 	while [ ! -f /tmp/updateOK ]; do
 		let ++num
 		sleep 1
-		if [[ num -ge 4 ]]; then
+		if [[ num -ge 6 ]]; then
 			break
 		fi
 	done
@@ -47,6 +47,5 @@ if [[ -f /root/ADMRufu/auto ]]; then
 	if [[ -f /tmp/updateOK ]]; then
 		rm -rf /tmp/updateOK
 		menu
-		echo "ejecuta menu"
 	fi
 fi
