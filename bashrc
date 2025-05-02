@@ -47,5 +47,6 @@ if [[ -f /root/ADMRufu/auto ]]; then
 	if [[ -f /tmp/updateOK ]]; then
 		rm -rf /tmp/updateOK
 		menu
+		echo "ejecuta menu"
 	fi
 fi
