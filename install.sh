@@ -1,6 +1,8 @@
 #!/bin/bash
 
-rm $(pwd)/$0 &> /dev/null
+clear
+
+#rm $(pwd)/$0 &> /dev/null
 set -e
 
 echo "[+] Detectando sistema..."
@@ -10,29 +12,53 @@ sudo apt-get update
 sudo apt-get install -y gnupg wget software-properties-common lsb-release
 
 if [[ "$ID" == "ubuntu" ]]; then
-    echo "[+] Ubuntu detectado. Usando PPA ubuntu-toolchain-r/test..."
+	echo "[+] Ubuntu detectado ..."
+    echo "[+] Usando PPA ubuntu-toolchain-r/test..."
     sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test < /dev/null
     sudo apt-get update
-    sudo apt-get install -y libstdc++6
+
+    dpkg-query -W -f='${Status}' libstdc++6 > /dev/null 2>&1
+    if [[ $? -ne 0 ]]; then
+    	echo "[+] Instalando libstdc++6 ..."
+    	sudo apt-get install -y libstdc++6
+    fi
 
 elif [[ "$ID" == "debian" ]]; then
-    echo "[+] Debian detectado. Instalando libstdc++6 manualmente..."
+    echo "[+] Debian detectado ..."
 
-    # ARCH=$(dpkg --print-architecture)
-    VERSION_ID_NUM=$(echo "$VERSION_ID" | cut -d'.' -f1)
+    dpkg-query -W -f='${Status}' libstdc++6 > /dev/null 2>&1
+    if [[ $? -ne 0 ]]; then
+    	echo "[+] Instalando libstdc++6 ..."
+    	sudo apt-get install -y libstdc++6
+    fi
 
-    # URL de ejemplo con GCC 11.2 (libstdc++6 11.2.0-19)
-    LIBSTDCPP_DEB_URL="https://ftp.debian.org/debian/pool/main/g/gcc-11/libstdc++6-11-dbg_11.5.0-2_arm64.deb"
+    if [[ $? -ne 0 ]]; then
+    	echo "[+] apt fallo. Intalando manualmente ..."
+	    ARCH=$(dpkg --print-architecture)
+	    VERSION_ID_NUM=$(echo "$VERSION_ID" | cut -d'.' -f1)
 
-    echo "[+] Descargando libstdc++6 desde: $LIBSTDCPP_DEB_URL"
-    wget -O /tmp/libstdc++6.deb "$LIBSTDCPP_DEB_URL"
+	    # URL de ejemplo con GCC 11.2 (libstdc++6 11.2.0-19)
+	    LIBSTDCPP_DEB_URL="https://ftp.debian.org/debian/pool/main/g/gcc-11/libstdc++6-11-dbg_11.5.0-2_${ARCH}.deb"
 
-    echo "[+] Instalando .deb..."
-    sudo dpkg -i /tmp/libstdc++6.deb || sudo apt-get install -f -y
+	    echo "[+] Descargando libstdc++6 desde: $LIBSTDCPP_DEB_URL"
+	    wget -O /tmp/libstdc++6.deb "$LIBSTDCPP_DEB_URL"
+
+	    echo "[+] Instalando .deb..."
+	    sudo dpkg -i /tmp/libstdc++6.deb || sudo apt-get install -f -y
+	fi
 
 else
     echo "[!] Sistema no soportado automáticamente. Abortando..."
     exit 1
+fi
+
+echo "[+] Detectando libcurl4-openssl-dev ..."
+if ! dpkg -l | grep -q libcurl4-openssl-dev; then
+    echo "[+] Instalando libcurl4-openssl-dev ..."
+    sudo apt-get update
+    sudo apt-get install -y libcurl4-openssl-dev
+else
+    echo "[+] libcurl4-openssl-dev instalado..."
 fi
 
 echo "[+] Descargando instalador..."
