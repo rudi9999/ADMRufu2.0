@@ -111,3 +111,15 @@ msgstr "CONFIGURE SSH BANNER"
 
 msgid "CONFIGURAR CLAVE Y ACCESO ROOT"
 msgstr "SET UP PASSWORD AND ROOT ACCESS"
+
+msgid "falla al abrir sshd_config"
+msgstr "Failed to open sshd_config"
+
+msgid "falla al leer sshd_config"
+msgstr "Failed to read sshd_config"
+
+msgid "APLICANDO CONFIGURACIONES INICIALES"
+msgstr "APPLYING INITIAL SETTINGS"
+
+msgid "Presione enter para continuar"
+msgstr "Press enter to continue"
