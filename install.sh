@@ -17,11 +17,8 @@ if [[ "$ID" == "ubuntu" ]]; then
     sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test < /dev/null
     sudo apt-get update
 
-    dpkg-query -W -f='${Status}' libstdc++6 > /dev/null 2>&1
-    if [[ $? -ne 0 ]]; then
-    	echo "[+] Instalando libstdc++6 ..."
-    	sudo apt-get install -y libstdc++6
-    fi
+    echo "[+] Instalando libstdc++6 ..."
+    sudo apt-get install -y libstdc++6
 
 elif [[ "$ID" == "debian" ]]; then
     echo "[+] Debian detectado ..."
