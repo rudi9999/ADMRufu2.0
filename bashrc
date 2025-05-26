@@ -17,7 +17,7 @@ if [[ $(echo $PATH|grep "/usr/games") = "" ]]; then PATH=$PATH:/usr/games; fi
 clear
 
 echo -e "\n" \
-"$(figlet -f big.flf "  ADMRufu2.0")\n" \
+"$(figlet -f standard "  ADMRufu2.0")\n" \
 "        RESELLER : $msj \n\n" \
 "   Para iniciar ADMRufu escriba:  menu \n\n"|lolcat
 
