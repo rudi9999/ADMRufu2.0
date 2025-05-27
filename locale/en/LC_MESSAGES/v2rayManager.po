@@ -148,3 +148,6 @@ msgstr "V2RAY AND XRAY UNINSTALLER"
 msgid "falla al obtener datos de la configuracion json"
 msgstr "Failure to obtain data from the JSON settings"
 
+msgid "ACTIVAR/DESACTIVAR LOG"
+msgstr "ENABLE/DEACTIVATE LOG"
+
