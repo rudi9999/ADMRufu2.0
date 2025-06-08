@@ -66,3 +66,15 @@ msgstr "INSTALL UDP-CUSTOM"
 
 msgid "Ingresa una Opcion"
 msgstr "Enter an Option"
+
+msgid "MODIFICAR PUERTO"
+msgstr "MODIFY PORT"
+
+msgid "MODIFICAR RANGO IPTABLES"
+msgstr "MODIFY IPTABLES RANGE"
+
+msgid "CANCELAR"
+msgstr "CANCEL"
+
+msgid "APLICAR"
+msgstr "APPLY"
