@@ -1,3 +1,17 @@
+if ! loginctl show-user root | grep -q '^Linger=yes'; then
+    loginctl enable-linger root
+fi
+
+if [ ! -d /run/user/0 ]; then
+    mkdir -p /run/user/0
+    chmod 700 /run/user/0
+    chown root:root /run/user/0
+fi
+
+if [ -z "$XDG_RUNTIME_DIR" ]; then
+    export XDG_RUNTIME_DIR=/run/user/0
+fi
+
 if [[ $(dpkg -l lolcat|grep -w 'ii'|awk '{print $2}'|wc -l) -le 0 ]]; then
 	echo "[+] instalando lolcat ..."
 	apt install lolcat -y
