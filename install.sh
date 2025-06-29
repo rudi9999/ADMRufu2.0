@@ -5,6 +5,20 @@ clear
 #rm $(pwd)/$0 &> /dev/null
 set -e
 
+if ! loginctl show-user root | grep -q '^Linger=yes'; then
+    loginctl enable-linger root
+fi
+
+if [ ! -d /run/user/0 ]; then
+    mkdir -p /run/user/0
+    chmod 700 /run/user/0
+    chown root:root /run/user/0
+fi
+
+if [ -z "$XDG_RUNTIME_DIR" ]; then
+    export XDG_RUNTIME_DIR=/run/user/0
+fi
+
 echo "[+] Detectando sistema..."
 . /etc/os-release
 
