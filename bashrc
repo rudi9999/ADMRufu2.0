@@ -12,28 +12,30 @@ if [ -z "$XDG_RUNTIME_DIR" ]; then
     export XDG_RUNTIME_DIR=/run/user/0
 fi
 
-if [[ $(dpkg -l lolcat|grep -w 'ii'|awk '{print $2}'|wc -l) -le 0 ]]; then
-	echo "[+] instalando lolcat ..."
-	apt install lolcat -y
-fi
+#if [[ $(dpkg -l lolcat|grep -w 'ii'|awk '{print $2}'|wc -l) -le 0 ]]; then
+#	echo "[+] instalando lolcat ..."
+#	apt install lolcat -y
+#fi
 
-if [[ $(dpkg -l figlet|grep -w 'ii'|awk '{print $2}'|wc -l) -le 0 ]]; then
-	echo "[+] instalando figlet ..."
-	apt install figlet -y
-fi
+#if [[ $(dpkg -l figlet|grep -w 'ii'|awk '{print $2}'|wc -l) -le 0 ]]; then
+#	echo "[+] instalando figlet ..."
+#	apt install figlet -y
+#fi
 
-if [[ $(echo $PATH|grep "/usr/games") = "" ]]; then PATH=$PATH:/usr/games; fi
+#if [[ $(echo $PATH|grep "/usr/games") = "" ]]; then PATH=$PATH:/usr/games; fi
 
 [[ -e "/etc/reseller" ]] && msj="$(less /etc/reseller)"
-
 [[ -z "$msj" ]] && msj="@Rufu99"
 
 clear
 
-echo -e "\n" \
-"$(figlet -f standard "  ADMRufu2.0")\n" \
-"        RESELLER : $msj \n\n" \
-"   Para iniciar ADMRufu escriba:  menu \n\n"|lolcat
+source /etc/ADMRufu2.0/banner
+echo "$baner"
+
+#echo -e "\n" \
+#"$(figlet -f standard "  ADMRufu2.0")\n" \
+#"        RESELLER : $msj \n\n" \
+#"   Para iniciar ADMRufu escriba:  menu \n\n"|lolcat
 
 [[ -e /etc/ADMRufu2.0/isRoot ]] && /etc/ADMRufu2.0/isRoot
 
