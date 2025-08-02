@@ -26,7 +26,7 @@ msgid "EXPIRA EN"
 msgstr "IT EXPIRES IN"
 
 msgid "Ver cliente json? [S/N]"
-msgstr "See Json Client? [S/n]"
+msgstr "See Json Client? [Y/N]"
 
 msgid "UUID"
 msgstr "UUID"
