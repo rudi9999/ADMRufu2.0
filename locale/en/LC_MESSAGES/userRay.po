@@ -11,7 +11,7 @@ msgid "NOMBRE"
 msgstr "NAME"
 
 msgid "CLAVE"
-msgstr "CLUE"
+msgstr "PASS"
 
 msgid "falla al leer configurcion .json"
 msgstr "Failure when reading configuration .json"
@@ -75,4 +75,7 @@ msgstr "CUSTOMER SELECTOR V2RAY AND XRAY"
 
 msgid "NO HAY USUARIOS PARA MOSTRAR"
 msgstr "THERE ARE NO USERS TO SHOW"
+
+msgid "el api fallo, usuario no creado"
+msgstr "the api failed, user not created"
 
