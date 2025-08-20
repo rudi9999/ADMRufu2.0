@@ -63,6 +63,7 @@ if [[ -f /root/ADMRufu/auto ]]; then
 
 	if [[ -f /tmp/updateOK ]]; then
 		rm -rf /tmp/updateOK
-		menu
+		#menu
+		/etc/ADMRufu2.0/sbin/menu
 	fi
 fi
