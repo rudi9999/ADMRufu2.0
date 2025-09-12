@@ -52,18 +52,19 @@ alias menu='/etc/ADMRufu2.0/sbin/menu'
 alias update-adm='/usr/bin/git -C /etc/ADMRufu2.0 pull'
 
 if [[ -f /root/ADMRufu/auto ]]; then
-	num=0
-	while [ ! -f /tmp/updateOK ]; do
-		let ++num
-		sleep 1
-		if [[ num -ge 6 ]]; then
-			break
-		fi
-	done
+	menu
+	#num=0
+	#while [ ! -f /tmp/updateOK ]; do
+	#	let ++num
+	#	sleep 1
+	#	if [[ num -ge 6 ]]; then
+	#		break
+	#	fi
+	#done
 
-	if [[ -f /tmp/updateOK ]]; then
-		rm -rf /tmp/updateOK
+	#if [[ -f /tmp/updateOK ]]; then
+	#	rm -rf /tmp/updateOK
 		#menu
-		/etc/ADMRufu2.0/sbin/menu
-	fi
+	#	/etc/ADMRufu2.0/sbin/menu
+	#fi
 fi
