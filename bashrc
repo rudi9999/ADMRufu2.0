@@ -53,6 +53,7 @@ alias update-adm='/usr/bin/git -C /etc/ADMRufu2.0 pull'
 alias monitor='/etc/ADMRufu2.0/sbin/onlineUser'
 alias api='/etc/ADMRufu2.0/sbin/apiMenu'
 alias tgbot='/etc/ADMRufu2.0/sbin/bottelegram'
+alias wsbot='/etc/ADMRufu2.0/sbin/botWhatsapp'
 
 if [[ -f /root/ADMRufu/auto ]]; then
 	menu
