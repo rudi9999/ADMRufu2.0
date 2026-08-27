@@ -5,17 +5,17 @@ if [[ $# -eq 0 ]]; then
 	echo ""
 	echo "  -Para activar el protocolo use el comando:"
 	echo ""
-	echo "    -Activar, default puerto 80 aputa a 22 ssh:"
-	echo "      btun on"
+	echo "    -Activar, default puerto 8080 aputa a 22 ssh:"
+	echo "      btun --on"
 	echo ""
 	echo "    -Activar puerto 80, default apunto a 22 ssh"
-	echo "      btun on 80"
+	echo "      btun --on --port 80"
 	echo ""
 	echo "    -Activar puerto 80 apuntando a puerto 22 ssh"
-	echo "      btun on 80 22"
+	echo "      btun --on --port 80 --ssh 22"
 	echo ""
 	echo "  -Para desactivar el protocolo:"
-	echo "    btun off"
+	echo "    btun --off"
 	exit 1
 fi
 
