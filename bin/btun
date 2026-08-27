@@ -19,39 +19,44 @@ if [[ $# -eq 0 ]]; then
 	exit 1
 fi
 
-start=$1
+on=false
+off=false
+BHTTP_PORT="8080"
+SSH_PORT="22"
 
-BHTTP_PORT=$2
-SSH_PORT=$3
+while [[ $# -gt 0 ]]; do
+  case $1 in
+    -s|--ssh)	shift
+    			if [[ $1 =~ ^[0-9]+$ ]]; then
+					SSH_PORT=$1
+					shift
+				fi;;
+    -p|--port)	shift
+    			if [[ $1 =~ ^[0-9]+$ ]]; then
+					BHTTP_PORT=$1
+					shift	
+				fi;;
+    --on)		on=true
+    			shift;;
+    --off)		off=true
+    			shift;;
+    *) exit 1;;
+  esac
+done
 
 serv="/etc/systemd/system/btun.service"
 bin="/usr/local/lib/bilola-server"
 
-if [[ -z $BHTTP_PORT ]]; then
-	BHTTP_PORT="8080"
-fi
+if $on; then
 
-if [[ ! $BHTTP_PORT =~ ^[0-9]+$ ]]; then
-	BHTTP_PORT="8080"	
-fi
-
-if [[ -z $SSH_PORT ]]; then
-	SSH_PORT="22"
-fi
-
-if [[ ! $SSH_PORT =~ ^[0-9]+$ ]]; then
-	SSH_PORT="22"	
-fi
-
-
-if [[ ${start} == "on" ]]; then
-
+	if [[ ! -f $sev ]]; then
+		systemctl disable --now btun
+		rm -rf $serv
+		systemctl daemon-reload
+	fi
 	
-	[[ -f $bin ]] && rm $bin
 	cp -f /etc/ADMRufu2.0/bin/bilola-server $bin
 	chmod +x $bin
-	
-	[[ -f $sev ]] && rm $serv
 
 cat >/etc/systemd/system/btun.service <<EOF
 [Unit]
@@ -77,9 +82,9 @@ systemctl enable --now btun
 
 fi
 
-if [[ ${start} == "off" ]]; then
+if $off; then
 	systemctl disable --now btun
-	rm $serv
+	rm -rf $serv
 	systemctl daemon-reload
 
 	rm -rf $bin
