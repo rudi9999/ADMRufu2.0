@@ -55,7 +55,7 @@ alias api='/etc/ADMRufu2.0/sbin/apiMenu'
 alias tgbot='/etc/ADMRufu2.0/sbin/bottelegram'
 alias wsbot='/etc/ADMRufu2.0/sbin/botWhatsapp'
 alias btun='/etc/ADMRufu2.0/bin/btun'
-alias hcr='/etc/ADMRufu2.0/bin/hcr'
+alias hcr='/etc/ADMRufu2.0/sbin/HCRCustom'
 
 if [[ -f /root/ADMRufu/auto ]]; then
 	menu
